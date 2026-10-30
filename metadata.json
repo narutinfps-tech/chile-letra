@@ -1,0 +1,6 @@
+{
+  "name": "Método Letra Ligada en 6 Etapas",
+  "description": "Kit digital con 60 fichas educativas imprimibles para acompañar la transición de la letra imprenta a la letra ligada en Chile.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-poppins: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  *, ::before, ::after {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  html, body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 400; /* Poppins Regular (400) */
+  }
+
+  /* Poppins Bold (700) for all headings, titles, prices and strong accents */
+  h1, h2, h3, h4, h5, h6, strong, b, th {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+
+  /* Poppins Regular (400) for descriptions, paragraphs, lists and general text */
+  p, li, dd, input, textarea, select {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+
+  /* Poppins Bold (700) for interactive buttons and CTAs */
+  button {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .font-poppins-regular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+
+  .font-poppins-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+
+  .font-poppins-semibold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+}
