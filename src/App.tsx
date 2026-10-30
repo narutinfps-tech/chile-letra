@@ -15,7 +15,6 @@ import Testimonials from './components/Testimonials';
 import Guarantee from './components/Guarantee';
 import Faq from './components/Faq';
 import Footer from './components/Footer';
-import MobileStickyCta from './components/MobileStickyCta';
 import ImageModal from './components/ImageModal';
 import LegalModal from './components/LegalModal';
 import CheckoutModal from './components/CheckoutModal';
@@ -91,9 +90,6 @@ export default function App() {
 
       {/* SECCIÓN 10 — RODAPÉ */}
       <Footer onOpenLegal={handleOpenLegal} />
-
-      {/* Mobile Floating Sticky CTA (Bottom button "VER PLANES") */}
-      <MobileStickyCta />
 
       {/* Interactive Modals */}
       <ImageModal

@@ -86,7 +86,7 @@ export default function CheckoutModal({ planKey, onClose }: CheckoutModalProps) 
           </div>
 
           <p className="text-xs text-slate-500 leading-relaxed mb-6">
-            Al hacer clic en el botón a continuación, serás redirigido a la plataforma oficial de <strong>Hotmart</strong>, donde se mostrará la conversión a pesos chilenos y los impuestos correspondientes antes de confirmar tu compra.
+            Al hacer clic en el botón a continuación, serás redirigido a la plataforma oficial de <strong>Hotmart</strong>, donde podrás completar tu pago con medios locales de Chile (Webpay, tarjetas bancarias) de forma 100% segura.
           </p>
 
           {/* Action button */}

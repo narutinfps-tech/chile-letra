@@ -4,18 +4,18 @@
  */
 
 export const CHECKOUT_CONFIG = {
-  // Enlace de checkout para el Plan Básico (US$ 9,90)
+  // Enlace de checkout para el Plan Básico ($9.830 CLP)
   urlBasico: "https://pay.hotmart.com/MOCK_BASICO_CHILE?checkoutMode=10",
 
   // Enlace de checkout para el Plan Premium (US$ 19,90)
   urlPremium: "https://pay.hotmart.com/MOCK_PREMIUM_CHILE?checkoutMode=10",
 
-  // Moneda y precios oficiales en dólares estadounidenses (Hotmart realiza la conversión a pesos chilenos según el medio de pago)
+  // Moneda y precios oficiales
   precios: {
     basico: {
-      valor: 9.90,
-      formato: "US$ 9,90",
-      moneda: "USD",
+      valor: 9830,
+      formato: "$9.830 CLP",
+      moneda: "CLP",
       nombre: "Plan Básico",
       etapas: 6,
       fichas: 60,
@@ -47,7 +47,7 @@ export function registrarEventoCheckout(plan: "basico" | "premium") {
     (window as unknown as { fbq: (...args: unknown[]) => void }).fbq("track", "InitiateCheckout", {
       content_name: infoPlan.nombre,
       value: infoPlan.valor,
-      currency: "USD",
+      currency: infoPlan.moneda,
     });
   }
 
@@ -56,7 +56,7 @@ export function registrarEventoCheckout(plan: "basico" | "premium") {
     (window as unknown as { gtag: (...args: unknown[]) => void }).gtag("event", "begin_checkout", {
       items: [{ item_name: infoPlan.nombre, price: infoPlan.valor }],
       value: infoPlan.valor,
-      currency: "USD",
+      currency: infoPlan.moneda,
     });
   }
 }

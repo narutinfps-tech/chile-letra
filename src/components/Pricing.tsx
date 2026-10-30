@@ -218,7 +218,7 @@ export default function Pricing({ onSelectPlan }: PricingProps) {
         {/* Currency & Tax Clarification */}
         <div className="max-w-2xl mx-auto text-center mb-8">
           <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
-            Los precios están expresados en dólares estadounidenses. El monto final en tu moneda y los impuestos aplicables se mostrarán antes de confirmar la compra en Hotmart.
+            Precios disponibles para Chile. El monto final en pesos chilenos y los métodos de pago locales (Webpay, tarjetas chilenas) se confirmarán en la pantalla de pago seguro de Hotmart.
           </p>
         </div>
 
